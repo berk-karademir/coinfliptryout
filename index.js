@@ -1,0 +1,1 @@
+/* Buralar eskiden hep dutluktu yiğeeniim. */
