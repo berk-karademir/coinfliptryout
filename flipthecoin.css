@@ -1,39 +1,81 @@
 
+* {
+  margin: 0;
+  padding: 0;
+}
 body{
   background-color: black;
   text-align: center;
   color: white;
- 
 }
 
-p {
-    font-style:italic;
-    font-family: "SUSE", sans-serif;
-    font-size: 90%;
-    font-weight: 600;
-    position: relative;
-    bottom: 100px;
-    
+header {
+  font-style: italic;
+  font-family: "SUSE", sans-serif;
+  text-align: center;
+  
+}
+.heading-span {
+  transition: transform 3s ease;
+  transform-style: preserve-3d;
+  transform-origin: center;
+  perspective: 1000px;
+  display: inline-block;
 }
 
 h1 {
-    font-style:italic;
-    font-family: "SUSE", sans-serif;
-    font-size: 600%;
-    display:inline-block;
-    margin-top: 0;
-    transition: transform 2.5s ease;
-    transform-style: preserve-3d;
-    transform-origin: center;
+  font-size: 600%;
+  display: contents;
 }
 
+h3 {
+    text-align: center;
+    font-size: 90%;
+    font-weight: 600;
+    margin-top: -25px;
+}
+  
 
-
-#h1 {
-  font-style:italic;
-  font-family: "SUSE", sans-serif;
-  font-size: 600%;  
+#result {
+  font-family: "Waiting for the Sunrise";
+  font-style: normal;
+  color: rgb(255, 238, 0);
+  font-size: 1000%;
+  font-weight: 900;
+  max-width:400px;
+  max-height: 180px;
   display: inline;
+  position: relative;
+  top: 60px;
+}
+
+#result-logs {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-weight: 700;
+    font-size: 250%;
+    max-width: 175px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    position: fixed;
+    top: 250px;
+}
+
+#result-logs li {
+  list-style-type: none;
+
+}
+
+#reset-button {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  border-radius: 10px;
+  padding: 10px;
+  background-color: rgb(57, 64, 70);
+  border: none;
+  display: flex;
+  align-items: center;
+  font-weight: 600;
+  color: white;
 }
 
 
@@ -49,7 +91,8 @@ h1 {
   width: 100px; 
   height: 100px;
   margin: 0 auto;
-  margin-top: 100px;
+  margin-top: 150px;
+
 }
 
 .flip-coin {
@@ -83,29 +126,23 @@ h1 {
   transform: rotateY(180deg); 
 }
 
-#sonuç {
-  color: rgb(255, 238, 0);
-  font-size: 1000%;
-  font-weight: 900;
-  text-align: center; 
-  margin-top: 55px; 
+
+
+footer {
+    font-family: "Orbitron", sans-serif;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
 }
 
-#adsoyad {
-  font-family: "Orbitron", sans-serif;
-  font-optical-sizing: auto;
-  font-style: normal;
-  position: fixed;
-  margin-left: -65px;
-  bottom: 0;
-  
-  
-}
-
+/*display:inline-flex;
+  flex-direction: column;
+  justify-content: center; 
+  align-items: center; */
 
   a:link {
-    color: rgb(17, 0, 255);
     
+    color: rgb(23, 0, 231);
     text-decoration: none;
     
     

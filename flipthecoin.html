@@ -8,29 +8,50 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=SUSE:wght@100..800&display=swap" rel="stylesheet">
   <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400..900&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Waiting+for+the+Sunrise&display=swap" rel="stylesheet">
   <title>Flip the Coin!</title>
 </head>
 <body>
-  <h1 onmouseover="h1()">FLIP</h1> 
-  <h1 id="h1">&nbsp;the COIN</h1>
-  <p>a simple flip coin website tryout</p>
 
-  <div class="flip-container" onclick="flp(this)">
-    <div class="flip-coin">
-      <div class="front">
-        <img src="1.png" alt="Yazı" />
-      </div>
-      <div class="back">
-        <img src="2.png" alt="Tura" />
+  <header>
+    <h1> <span class="heading-span" onmouseover="headingFlip()"> FLIP&nbsp;</span>the COIN</h1> 
+    <h3>a simple flip coin website tryout</h3>
+  </header>
+
+  <main>
+    <div class="flip-container" onclick="flp(this)">
+      <div class="flip-coin">
+        <div class="front">
+          <img src="coin-images\1.png" alt="Yazı" />
+        </div>
+        <div class="back">
+          <img src="coin-images\2.png" alt="Tura" />
+        </div>
       </div>
     </div>
-  </div>
-  
+    
+  </main>
 
   
-  <a id="adsoyad" href="https://www.youtube.com/@Lotototo" title="Beko Youtube">berk karademir</a>
+      <div id="result"></div>
+
+      <div id="result-logs">
+        <h4>counter ▼</h4>
+        
+        <li id = "heads">heads: </li>
+        <li id = "tails">tails: </li>
+        <button id="reset-button" onclick="resetCounter()"><img src="./reset.svg" alt="reset.svg">Reset Counter</button>
+
+      </div>
+    
+    
   
-  <script src="flipthecoin.js"></script> 
-<div id="sonuç"></div>
+
+<footer>
+  <a  href="https://www.youtube.com/@Lotototo" title="Beko Youtube">berk karademir</a>
+</footer>
+  
+
+<script src="flipthecoin.js"></script> 
 </body>
 </html>
